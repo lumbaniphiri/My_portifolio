@@ -1,0 +1,167 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Sidebar (aside) */
+
+aside {
+    width: 25%;
+    background-color: white;
+    color: #0a230e;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+aside img.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+aside section {
+    margin-bottom: 30px;
+}
+
+aside h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+aside ol {
+    padding: 0;
+    list-style: none;
+}
+
+aside ol li {
+    margin: 5px 0;
+}
+
+
+/* Main section */
+
+main {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+/* Contact section */
+
+.contact {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #2ab662;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    width: 120px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #34c759;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    align-self: flex-start;
+}
+
+.contact button:hover {
+    background-color: #85c955;
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    main {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
+
+flex-direction: column;
+
+}
+aside {
+    width: 100%;
+    padding: 20px 10px;
+}
+main {
+    width: 100%;
+    padding: 20px 10px;
+}
